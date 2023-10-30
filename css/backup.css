@@ -1,0 +1,44 @@
+.product-line-one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+
+.product-line-two{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 6rem;
+}
+
+.product-line-three{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 7rem;
+    margin-top: 6rem;
+
+}
+
+.extreme{
+    text-align: center;
+}
+.active{
+    text-align: center;
+}
+.storm{
+    text-align: center;
+}
+.odin{
+    text-align: center;
+}
+.hard{
+    text-align: center;
+}
+.fleece{
+    text-align: center;
+}
+.wind{
+    text-align: center;
+}

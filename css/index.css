@@ -1,0 +1,202 @@
+@font-face {
+    font-family: "Roboto" ;
+    src: url("../Fonts/Roboto-2/Roboto-Medium.ttf") format("truetype");
+
+    font-family: "Roboto Regular";
+    src:url("../Fonts/Roboto-2/Roboto-Regular.ttf") format("truetype");
+
+    font-family: "Roboto bold";
+    src: url("../Fonts/Roboto-2/Roboto-Bold.ttf") format("truetype");
+}
+
+
+h1,
+h2,
+h3,
+.cta,
+.cta-buttons,
+.back-black {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+img {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    font-family: "Roboto Regular", Arial, Helvetica, sans-serif;
+}
+
+
+header,
+footer {
+
+    background-color: #000;
+    color: #fff;
+    align-items: center;
+    display: flex;
+}
+
+header a,
+footer a {
+    color: #fff;
+    align-items: center;
+    text-decoration: none;
+}
+.home{
+    text-decoration: underline;
+}
+
+header search input{
+    background-color: #c7c7c7;
+    color:#444447 ;
+    outline: none;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    padding: 0,25rem;
+}
+
+nav li {
+    font-family: "Roboto ", Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    display: inline-block;
+    padding: 20px;
+    margin-right: 70px;
+}
+
+
+.banner-home {
+    background-image: url("../Images/couple-trekking-through-rain-highlands.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 400px;
+    padding-top: 30px;
+    background-position: center;
+    
+}
+
+.banner-text,
+h1{
+    margin-left: 1rem;
+}
+.banner-text{
+    margin-bottom: 4rem;
+}
+
+ body{
+    margin: 0%;
+    padding: 0%;
+ }
+
+
+button{
+    background-color: #000;
+    color: #fff;
+}
+
+.cta {
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 0.8rem;
+    border-style: solid;
+    border-width: 0.2rem;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 1rem;
+}
+
+
+.back-black {
+    color: #000;
+}
+.logo {
+    max-width: 150px;
+    float: left;
+}
+.shop-options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.shop-men{
+    text-align: center;
+    margin-right: 1rem;
+}
+.shop-women{
+    text-align: center;
+    margin-right: 1rem;
+}
+.shop-all{
+    text-align: center;
+}
+
+img {
+    max-width: 19rem;
+}
+
+.figcaption{
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    font-family: "Roboto Regular", Arial, Helvetica, sans-serif;
+}
+
+.sale-best{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.sale-left{
+    background-image: url(../Images/hiking-8216486_1280\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 30rem;
+    margin-left: 0%;
+    margin-top: 5rem;
+    margin-right: 1rem;
+    text-align: center;
+    color: #fff;
+
+}
+
+
+
+.best-right{
+    background-image: url(../Images/mountaineer-2559066_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 30rem;
+    margin-left: 0%;
+    margin-top: 5rem;
+    margin-right: 1rem;
+    text-align: center;
+    filter: brightness(50%);
+  
+}
+@media screen and (max-width: 850px) {
+
+}
+
+.shop-options img{
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+}
+
+h2{
+    margin-top: 4rem;
+}
