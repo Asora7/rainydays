@@ -9,6 +9,40 @@
     src: url("../Fonts/Roboto-2/Roboto-Bold.ttf") format("truetype");
 }
 
+h1,
+h2,
+h3,
+.cta,
+.cta-buttons,
+.back-black {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    font-family: "Roboto Regular", Arial, Helvetica, sans-serif;
+}
+
+
+body,
+html {
+    max-height: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+.contact{
+    text-decoration: underline;
+}
+
+.logo {
+    max-width: 150px;
+    float: left;
+}
+
 header,
 footer {
 
@@ -16,6 +50,7 @@ footer {
     color: #fff;
     align-items: center;
     display: flex;
+    justify-content: space-between;
 }
 
 header a,
@@ -23,9 +58,6 @@ footer a {
     color: #fff;
     align-items: center;
     text-decoration: none;
-}
-.home{
-    text-decoration: underline;
 }
 
 header search input{
@@ -42,72 +74,541 @@ nav li {
     font-family: "Roboto ", Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     display: inline-block;
-    padding: 20px;
-    margin-right: 70px;
+    padding: 1.5rem;
 }
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.checkout-container {
+    font-family: "Roboto ", Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+button.checkout-icon {
+    border: 0;
+    font-size: 150%;
+    padding: 1rem;
+    display: none;
+}
+
+.search-button {
+    background-color: #000;
+    color: #fff;
+}
+
+.search {
+    margin-left: 2rem;
+}
+
+.search-container {
+    position: relative;
+    display: none;
+}
+
+.search-input {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.search-button {
+    cursor: pointer;
+    border: 0;
+    font-size: 24px;
+}
+
+.search-button:focus + .search-input {
+    display: block;
+}
+
+.search-container-desktop ::placeholder {
+    color: #000;
+}
+
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    position: fixed;
+    right: 0;
+    z-index: 1;
+    width: 100vw;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    height: 30px;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+.menu {
+    list-style: none;
+    padding: 1rem;
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #000;
+    width: 200px;
+    z-index: 2;
+}
+
+.menu-toggle {
+    margin-right: 1rem;
+    display: none;
+}
+
+.menu li {
+    margin-bottom: 1rem;
+}
+
+.line {
+    background-color: #000;
+    width: 100%;
+    height: 3px;
+}
+
+input[type="checkbox"] {
+    display: none;
+  }
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+label span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px auto;
+    background: #fff;
+    transition: 0.4s;
+}
+
+input:checked + label span:nth-child(2) {
+    opacity: 0;
+}
+
+input:checked + label span:nth-child(1) {
+    transform: rotate(45deg) translate(-5px, 6px);
+}
+
+
+input:checked + label + .menu {
+    display: block;
+}
+
 
 .banner-shop{
     background-image: url(../Images/man-takes-selfie-front-mountains.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     min-height: 400px;
     padding-top: 70px;
+   position: relative;
     padding-left: 2rem;
-    filter: brightness(50%)
 }
 
-.logo {
-    max-width: 150px;
-    float: left;
+.text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
 }
-
-body{
-    margin: 0%;
-    padding: 0%;
- }
-
-h1,
-h2,
-h3 {
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-}
-
 
 h1 {
-    font-size: 2em;
+   position: relative;
+   z-index: 2;
+   color: #fff;
+   padding-left: 5rem;
+   padding-top: 5rem;
 }
 
-p {
-    font-family: "Roboto Regular", Arial, Helvetica, sans-serif;
-}
 
 
-
-.back-black {
-    color: #000;
+fieldset {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #EDEDED;
+    padding-right: 2rem;
+    text-align: left;
 }
 
 .form__input{
     display: block;
 }
 
+textarea {
+    color: dimgray;
+    padding: 1rem;
+    padding-left: 5rem;
+    margin-right: 4rem;
+    margin-top: 1.2rem;
+    border-style: outset;
+}
+
+
 button{
     display: block;
     background-color: #000;
     color: #fff;
+    padding: 0.3rem;
+    margin-top: 1rem;
 }
- .contact-info,
- .news-letters {
+ 
+.contact-info {
     background-color: #000;
     color: #fff;
-    display: inline-block;
- }
+    padding-top: 3rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+.news-letters {
+    background-color: #000;
+    color: #fff;
+    padding-top: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+
+}
+
+
+.follow{
+    margin-top: 5rem;
+}
+
+.contact-info .mail,
+.contact-info .phone,
+.contact-info .location {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info .mail i,
+.contact-info .phone i,
+.contact-info .location i {
+    margin-right: 1rem;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    margin: 7rem;
+}
+
+.boxes input {
+    border-color: #fff;
+}
+
+fieldset input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 1.2rem;
+    border-style: outset;
+    padding-right: 2rem;
+    margin-left: 4rem;
+}
 
  .email{
     background-color: #000;
     color: #fff;
+    padding-right: 3rem;
+    margin-top: 1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
  }
- .sign-up{
+ footer {
+    margin-top: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    position: relative;
+}
+
+footer nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type:none ;
+    padding: none;
+}
+
+footer .follow-us {
+    margin-top: -1.2rem;
+    margin-left: 2rem;
+}
+
+footer .follow-us i {
+    margin-left: 1rem;
+}
+
+footer .news {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+footer .news input {
+    border: 1px solid #fff;
+    padding: 0.2rem;
+}
+
+footer .email {
     background-color: #000;
     color: #fff;
- }
+}
+
+footer .sign-up {
+    margin-left: 6.8rem;
+}
+
+footer .copyright {
+    margin-bottom: 3rem;
+}
+
+
+
+
+@media screen and (max-width: 954px) {
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button.checkout-icon,
+button.search,
+button.burger {
+    display: inline-flex;
+}
+
+
+.display-desktop {
+    display: none;
+}
+
+.search-container {
+    display: inline-block;
+}
+
+.menu-toggle{
+    display: block;
+}
+
+.button {
+    margin-left: 2rem;
+}
+
+
+.news{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.follow-us {
+    margin-left: -1em;
+}
+
+.about-us {
+    margin-left: -7rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-us {
+    margin-left: -6rem;
+    margin-bottom: 1rem;
+}
+
+.products {
+    margin-left: -7rem;
+}
+
+.copyright {
+    margin-top: 4rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+footer input {
+    background-color: #000;
+    
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+footer nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-footer {
+    max-width: 400px;
+}
+
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    button.checkout-icon,
+    button.search,
+    button.burger {
+        display: inline-flex;
+    }
+
+    .search-container {
+        display: inline-block;
+    }
+    
+    .menu-toggle{
+        display: block;
+    }
+
+    .write-to-us fieldset {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .form__input {
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .textarea-wrapper {
+        width: 100%;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    textarea {
+        width: 100%;
+        padding: 0.5rem;
+        box-sizing: bor;
+    }
+    
+    .boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        padding-left: 7.3rem;
+        padding-bottom: 6rem;
+        margin-bottom: 4rem;
+    }
+
+    .news-letters {
+        padding-right: 5rem;
+        margin-right: 1rem;
+    }
+
+    .display-desktop {
+        display: none;
+    }
+    .button {
+        margin-left: 2rem;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    footer nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logo-footer {
+        max-width: 400px;
+        margin-top: -2rem;
+    }
+    
+    .news{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    
+    .follow-us {
+        margin-left: -1em;
+    }
+    
+    .about-us {
+        margin-left: -7rem;
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .contact-us {
+        margin-left: -6rem;
+        margin-bottom: 1rem;
+    }
+    
+    .products {
+        margin-left: -7rem;
+    }
+    
+    .copyright {
+        margin-top: 4rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    footer input {
+        background-color: #000;
+        
+    }
+    
+    }
