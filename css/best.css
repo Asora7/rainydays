@@ -272,6 +272,19 @@ select {
     grid-gap:50px;
 }
 
+.new-price {
+    color: red;
+    margin-left: 1rem;
+}
+.old-price {
+    text-decoration: line-through;
+}
+.new-price,
+.old-price {
+    display: inline-flex;
+    margin-right: 0.1rem;
+}
+
 .extreme{
     text-align: center;
 }
@@ -385,7 +398,7 @@ select {
 
 
 .storm img  {
-    max-width:129% ;
+    max-width:118% ;
 }
 
 .text-storm {

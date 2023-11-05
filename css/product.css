@@ -228,9 +228,11 @@ input:checked + label + .menu {
 
 
 img{
-    width: 100%;
+    width: 70%;
     height: auto;
     display: inline-block;
+    margin-top: 5rem;
+    margin-left: 3rem;
 }
 
 .name{

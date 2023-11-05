@@ -282,6 +282,19 @@ select {
     grid-gap: 8rem
 }
 
+.new-price {
+    color: red;
+    margin-left: 1rem;
+}
+.old-price {
+    text-decoration: line-through;
+}
+.new-price,
+.old-price {
+    display: inline-flex;
+    margin-right: 1rem;
+}
+
 
 .products-all img {
     width: 100%;

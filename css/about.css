@@ -466,10 +466,6 @@ footer input {
         margin-left: -6rem;
         margin-bottom: 1rem;
     }
-    
-    .products {
-        margin-left: -7rem;
-    }
 
     .copyright {
         margin-top: 4rem;
@@ -496,7 +492,7 @@ footer input {
     
     .logo-footer {
         max-width: 400px;
-        margin-top: -2rem;
+        margin-top: 2rem;
     }
     
 }

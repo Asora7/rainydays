@@ -270,6 +270,20 @@ input:checked + label + .menu {
     
 }
 
+.new-price{
+    color: red;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
+.new-price,
+.old-price {
+    display: inline-flex;
+    margin-left: 0.2rem;
+}
+
 
 .products-all img {
     width: 100%;
