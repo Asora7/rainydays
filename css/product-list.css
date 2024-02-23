@@ -1,0 +1,473 @@
+@font-face {
+    font-family: "Roboto" ;
+    src: url("../Fonts/Roboto-2/Roboto-Medium.ttf") format("truetype");
+
+    font-family: "Roboto Regular";
+    src:url("../Fonts/Roboto-2/Roboto-Regular.ttf") format("truetype");
+
+    font-family: "Roboto bold";
+    src: url("../Fonts/Roboto-2/Roboto-Bold.ttf") format("truetype");
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    max-height: 100%;
+ }
+
+ .shop {
+    text-decoration: underline;
+}
+
+ .logo{
+    max-width: 150px;
+}
+
+
+h1 {
+    font-size: 2em;
+    color: #fff;
+    padding-left: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+h1,
+h2,
+h3,
+.cta,
+.cta-buttons {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: "Roboto Regular", Arial, Helvetica, sans-serif;
+}
+
+
+header,
+footer {
+
+    background-color: #000;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+header a,
+footer a {
+    color: #fff;
+    align-items: center;
+    text-decoration: none;
+}
+.home{
+    text-decoration: underline;
+}
+
+header search input{
+    background-color: #c7c7c7;
+    color:#444447 ;
+    outline: none;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    padding: 0,25rem;
+}
+
+
+nav li {
+    font-family: "Roboto ", Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    display: inline-block;
+    padding: 10px;
+    margin-right: 80px;
+    
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.checkout-container {
+    font-family: "Roboto ", Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+
+}
+
+
+button.checkout-icon {
+    border: 0;
+    font-size: 150%;
+    padding: 1rem;
+    display: none;
+    background-color: #000;
+}
+
+.search-button {
+    color: #fff;
+    background-color: #000;
+}
+
+.search {
+    margin-left: 2rem;
+}
+
+.search-container {
+    position: relative;
+    display: none;
+}
+
+.search-input {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.search-button {
+    cursor: pointer;
+    border: 0;
+    font-size: 24px;
+}
+
+.search-button:focus + .search-input {
+    display: block;
+}
+
+.search-container-desktop ::placeholder {
+    color: #000;
+}
+
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    position: fixed;
+    right: 0;
+    z-index: 1;
+    width: 100vw;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    height: 30px;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+.menu {
+    list-style: none;
+    padding: 1rem;
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #000;
+    width: 200px;
+    z-index: 2;
+}
+
+.menu-toggle {
+    margin-right: 1rem;
+    display: none;
+}
+
+.line {
+    background-color: #000;
+    width: 100%;
+    height: 3px;
+}
+
+input[type="checkbox"] {
+    display: none;
+  }
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+label span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px auto;
+    background: #fff;
+    transition: 0.4s;
+}
+
+input:checked + label span:nth-child(2) {
+    opacity: 0;
+}
+
+input:checked + label span:nth-child(1) {
+    transform: rotate(45deg) translate(-5px, 6px);
+}
+
+input:checked + label + .menu {
+    display: block;
+}
+
+.menu li {
+    margin-bottom: 1rem;
+}
+
+.banner-shop{
+    background-image: url(../Images/family-couple-travelers-hiking-mountains.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    padding-top: 70px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.banner-shop span {
+    color: #99DB2F;
+}
+
+
+
+
+.products-men {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product-item {
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-item img {
+    width: 300px; /* Make all images the same width */
+    height: 300px; /* Set a fixed height for the images */
+    /* object-fit: cover; /* Cover the entire container without distortion */
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 85.3%; /* Place title at the vertical center */
+    left: 50%; /* Place title at the horizontal center */
+    transform: translate(-50%, -50%); /* Center the title precisely */
+    text-align: center; /* Center the text within the container */
+    color: #fff; /* Set text color to white */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for better readability */
+    width: 100%; /* Full width of the container */
+    padding: 10px; /* Add padding for better visual appeal */
+    box-sizing: border-box; /* Include padding and border in the total width/height */
+}
+
+.product-price {
+    font-size: 16px;
+    margin-top: 2px;
+    color: #fff; /* Set text color to white */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for better readability */
+    padding: 5px; /* Add padding for better visual appeal */
+    box-sizing: border-box; /* Include padding and border in the total width/height */
+    text-align: center; /* Center the text within the container */
+}
+
+.product-discount {
+    display: none;
+}
+
+.original-price {
+    text-decoration: line-through; /* Add strike-through to the original price for on-sale items */
+}
+
+.discount-percentage {
+    color: red; /* Set text color to red for the discount percentage */
+}
+
+.category-button.active {
+    border: 2px solid blue; /* You can adjust the border style and color */
+}
+
+
+
+/* Add any additional styles or adjustments you need */
+
+
+
+
+
+
+
+
+
+
+footer {
+    margin-top: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    position: relative;
+}
+
+footer nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type:none ;
+    padding: none;
+}
+
+footer .follow-us {
+    margin-top: -1.2rem;
+    margin-left: 2rem;
+}
+
+footer .follow-us i {
+    margin-left: 1rem;
+}
+
+footer .news {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+footer .news input {
+    border: 1px solid #fff;
+    padding: 0.2rem;
+}
+
+footer .email {
+    background-color: #000;
+    color: #fff;
+}
+
+
+footer .copyright {
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 954px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    button.checkout-icon,
+    button.search,
+    button.burger {
+        display: inline-flex;
+    }
+    
+    .search-container {
+        display: inline-block;
+    }
+    
+    .menu-toggle{
+        display: block;
+    }
+    
+    .display-desktop {
+        display: none;
+    }
+    .button {
+        margin-left: 2rem;
+    }
+    
+    .shop-options {
+        display: block;
+    }
+    
+    .shop-button {
+        max-width: 30%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .products-all {
+        display: block;
+    }
+
+    .extreme,
+    .odin,
+    .hard {
+        margin-bottom: 8rem;
+    }
+
+    .products-all img {
+        max-width: 30%;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    footer nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logo-footer {
+        max-width: 400px;
+        margin-top: 2rem;
+    }
+    
+    .news{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    
+    .follow-us {
+        margin-left: -1em;
+    }
+    
+    .products {
+        margin-left: -7rem;
+    }
+    
+    .copyright {
+        margin-top: 4rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    footer input {
+        background-color: #000;
+        
+    }
+    
+    }
+    

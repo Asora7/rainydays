@@ -41,6 +41,32 @@ html {
     text-decoration: underline;
 }
 
+.logo{
+    max-width: 150px;
+}
+
+
+h1 {
+    font-size: 2em;
+    color: #fff;
+    padding-left: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+h1,
+h2,
+h3,
+.cta,
+.cta-buttons {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: "Roboto Regular", Arial, Helvetica, sans-serif;
+}
+
+
 header,
 footer {
 
@@ -57,6 +83,9 @@ footer a {
     align-items: center;
     text-decoration: none;
 }
+.home{
+    text-decoration: underline;
+}
 
 header search input{
     background-color: #c7c7c7;
@@ -67,11 +96,14 @@ header search input{
     padding: 0,25rem;
 }
 
+
 nav li {
     font-family: "Roboto ", Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     display: inline-block;
-    padding: 1.5rem;
+    padding: 10px;
+    margin-right: 80px;
+    
 }
 
 nav ul {
@@ -91,7 +123,9 @@ nav {
 .checkout-container {
     font-family: "Roboto ", Arial, Helvetica, sans-serif;
     font-size: 1.2em;
+
 }
+
 
 button.checkout-icon {
     border: 0;
@@ -132,13 +166,10 @@ button.checkout-icon {
     display: block;
 }
 
-.search-container-desktop {
-    display: block;
-}
-
 .search-container-desktop ::placeholder {
     color: #000;
 }
+
 
 .dropdown {
     display: flex;
@@ -344,6 +375,15 @@ button.burger {
 .sale {
     margin-top: 30%;
     margin-bottom: 80%;
+}
+
+#cart-count {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    position: relative;
+    top: -10px;
 }
 
 footer {

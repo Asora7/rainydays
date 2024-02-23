@@ -6,8 +6,10 @@
     <meta name="Rainydays website" content="checkout the items you picked from Raidays">
     <title>Rainydays Checkout</title>
     <link href="../css/chechout.css" rel="stylesheet"/>
+    <link href="../css/shared.css" rel="stylesheet"/>
     <link rel="icon" type="image/png" href="Images/favicon.png">
     <script src="https://kit.fontawesome.com/5e7a9d58a5.js" crossorigin="anonymous"></script>
+    <script src="../javascript/shared-functions.js" defer></script>
 </head>
 <body>
     <header>
@@ -15,7 +17,7 @@
         <nav>
             <ul class="display-desktop">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="../shop/shop.html">Shop</a></li>
+                <li><a href="../products/product-list.html">Shop</a></li>
                 <li><a href="../about.html">About Us</a></li>
                 <li><a href="../contact.html">Contact Us</a></li>
                 <li><search>
@@ -23,7 +25,7 @@
                         <input type="search" name="search" id="search" placeholder="Search...">
                     </div>
                     </search>
-                <li class="checkout"><a href="checkout/checkout.html" class="display-desktop">Checkout</a><i class="fa-solid fa-cart-shopping"></i></li>
+                <li class="checkout"><a href="checkout/checkout.html" class="display-desktop">Checkout</a><i class="fa-solid fa-cart-shopping"></i><span id="cart-count"></span></li>
             </ul>
         </nav>
         <div class="button">
@@ -46,7 +48,7 @@
             </label>
             <ul class="menu">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="../shop/shop.html">Shop</a></li>
+                <li><a href="../products/product-list.html">Shop</a></li>
                 <li><a href="../about.html">About us</a></li>
                 <li><a href="../contact.html">Contact us</a></li>
                 <li class="checkout"><a href="../checkout/checkout.html">Checkout</a></li>

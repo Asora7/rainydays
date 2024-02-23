@@ -1,0 +1,68 @@
+.products-men img {
+    width: 100%;
+}
+
+.products-men {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+    max-width: 1000px;
+    grid-gap:50px;
+}
+
+.products-all{
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+    max-width: 1000px;
+    grid-gap: 8rem
+    
+}
+
+.new-price{
+    color: red;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
+.new-price,
+.old-price {
+    display: inline-flex;
+    margin-left: 0.2rem;
+}
+
+
+.products-all img {
+    width: 100%;
+}
+
+.products-all span {
+    font-weight: 600;
+}
+
+.products-all .text {
+    display: inline;
+}
+
+.extreme {
+    margin-top: -1rem;
+}
+
+.hard img  {
+    width: 100%;
+}
+
+.odin img {
+    width: 110%;
+}
+
+.text-odin {
+    margin-top: 2.5rem;
+}
+
+.text-hard {
+    margin-top: 1.5rem;
+}

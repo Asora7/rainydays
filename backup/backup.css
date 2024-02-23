@@ -1,0 +1,186 @@
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .product-item {
+    margin: 10px;
+    cursor: pointer;
+  }
+  .product-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+
+
+
+
+
+/* burger menu: */
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    position: fixed;
+    right: 0;
+    z-index: 1;
+    width: 100vw;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    height: 30px;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+.menu {
+    list-style: none;
+    padding: 1rem;
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #000;
+    width: 200px;
+    z-index: 2;
+}
+
+.menu-toggle {
+    margin-right: 1rem;
+    display: none;
+}
+
+.menu li {
+    margin-bottom: 1rem;
+}
+
+.line {
+    background-color: #000;
+    width: 100%;
+    height: 3px;
+}
+
+input[type="checkbox"] {
+    display: none;
+  }
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+label span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px auto;
+    background: #fff;
+    transition: 0.4s;
+}
+
+input:checked + label span:nth-child(2) {
+    opacity: 0;
+}
+
+input:checked + label span:nth-child(1) {
+    transform: rotate(45deg) translate(-5px, 6px);
+}
+
+
+input:checked + label + .menu {
+    display: block;
+}
+
+@media screen and (max-width: 954px) {
+
+  header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  button.checkout-icon,
+  button.search,
+  button.burger {
+      display: inline-flex;
+  }
+  
+  .search-button {
+      display: inline-block;
+  }
+  
+  .search-container {
+      display: block;
+  }
+  
+  .menu-toggle{
+      display: block;
+  }
+  
+  .display-desktop {
+      display: none;
+  }
+  
+  
+  footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+  }
+  footer nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .logo-footer {
+      max-width: 400px;
+      margin-top: -2rem;
+  }
+  
+  .news{
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+  }
+  
+  .follow-us {
+      margin-left: -1em;
+  }
+  
+  
+  .products {
+      margin-left: -7rem;
+  }
+  
+  .copyright {
+      margin-top: 4rem;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+  }
+  
+  footer input {
+      background-color: #000;
+      
+  }
+  
+  footer {
+      z-index: 0;
+      margin-bottom: 0%;
+      padding: 2rem;
+      
+  }
+  }
+  
+ 

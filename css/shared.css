@@ -1,0 +1,20 @@
+#cart-count {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    position: relative;
+    top: -10px;
+}
+
+.fa-solid.fa-cart-shopping {
+    font-size: 25px; 
+    margin-left: 8px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
