@@ -18,11 +18,7 @@ body{
     padding: 0%;
  }
 
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
+
 
 .logo{
     max-width: 150px;
@@ -233,16 +229,7 @@ input:checked + label + .menu {
 }
 
 
-.shipping button {
-    width: 17.4rem;
-    margin-top: -0.2rem;
-}
 
-.shipping {
-    grid-column: 1;
-    height: 35.2em;
-    width: auto;
-}
 
 .card  {
     margin-right: 11rem;
@@ -263,99 +250,8 @@ input:checked + label + .menu {
 
 }
 
-.payment-summary {
-    height:100vh;
-    width: auto;
-}
-
-
-.summary {
-    display: flex;
-    align-items: flex-start;
-    flex: 1;
-}
-
 .card {
     padding-bottom: 1rem;
-}
-
-.summary-text {
-    display: block;
-}
-
-.summary-text span {
-    font-weight: 600;
-}
-
-.fa-pen-to-square {
-    float: right;
-    margin-top: -3rem;
-}
-
-img {
-    width: auto;
-    max-width: 200px;
-    max-height: 200px;
-    margin-right: 2rem;
-    margin-top: 2.4rem;
-    margin-bottom: 2rem;
-}
-
-.right-summary {
-    flex: 1;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    
-}
-
-.edit,
-h4 {
-    display: inline-flex;
-}
-
-.edit {
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-.price span,
-.size span {
-    margin-right: 6rem;
-}
-
-.size {
-    border-bottom: 1.5px solid black;
-}
-
-.large {
-    text-transform: uppercase;
-    margin-left: 0.8rem;
-}
-
-.subtotal span {
-    margin-right: 4.5rem;
-}
-
-.subtotal {
-    margin-top: 2rem;
-}
-
-.total span {
-    margin-right: 3.4rem;
-}
-
-button{
-    background-color: #000;
-    color: #fff;
-    width: 100%;
-    padding: 0.5rem;
-    margin-top: 1.5rem;
-    text-transform: uppercase;
-    font-size: medium;
-}
-
-.span {
-    font-weight: 600;
 }
 
 fieldset.shipping {
@@ -364,16 +260,81 @@ fieldset.shipping {
     justify-content: center;
     align-items: center;
     text-align: center;
-    top: rem;
 }
 
-fieldset.shipping {
-    background-color: #C7C7C7;
-}
-
+fieldset.shipping,
 fieldset.payment {
     background-color: #C7C7C7;
 }
+
+.payment {
+    margin-top: rem;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+
+#product-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.order-summary-image {
+    max-width: 20%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 10px;
+    border-top: solid;
+    padding-top: 1rem;
+}
+
+.order-summary-title,
+.order-summary-size,
+.order-summary-price {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.order-summary-title {
+    font-weight: bold;
+}
+
+.order-summary-price {
+    margin-bottom: 1rem;
+}
+
+#total-price {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.remove-button {
+    margin-bottom: 2rem;
+}
+
+#checkout-button {
+    margin-top: 20px;
+    background-color: #000;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    font-family: "Roboto Regular", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
 
 footer {
     margin-top: 20rem;

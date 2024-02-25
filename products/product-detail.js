@@ -1,26 +1,45 @@
 // product-detail.js
 
-document.addEventListener("DOMContentLoaded", function () {
-    const productsContainer = document.getElementById('product-details');
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
-    updateCartCount();  // Update cart count on page load
-  
-    fetch('https://api.noroff.dev/api/v1/rainy-days')
-        .then(response => response.json())
-        .then(products => {
-            const productId = window.location.hash.substring(1);
-            const product = products.find(p => p.id === productId);
-  
-            if (product) {
-                const productItem = createProductItem(product);
-                productsContainer.appendChild(productItem);
-            } else {
-                console.error('Product not found.');
-            }
-        })
-        .catch(error => console.error('Error fetching products:', error));
-  });
-  
+document.addEventListener("DOMContentLoaded", async function () {
+    try {
+        const productsContainer = document.getElementById('product-details');
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        updateCartCount(); 
+        showLoadingIndicator();
+
+        const response = await fetch('https://api.noroff.dev/api/v1/rainy-days');
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const products = await response.json();
+
+        const productId = window.location.hash.substring(1);
+        const product = products.find(p => p.id === productId);
+
+        if (product) {
+            const productItem = createProductItem(product);
+            productsContainer.appendChild(productItem);
+        } else {
+            alert('Product not found.');
+        }
+    } catch (error) {
+        window.location.href = "/error.html";
+    } finally {
+        hideLoadingIndicator();
+    }
+});
+
+  function showLoadingIndicator() {
+    document.getElementById("loading-spinner").style.display = "block";
+  }
+
+  function hideLoadingIndicator() {
+    document.getElementById("loading-spinner").style.display = "none";
+  }
+ 
+
   function createProductItem(product) {
     const productItem = document.createElement("div");
     productItem.classList.add("product-item");
@@ -86,7 +105,8 @@ document.addEventListener("DOMContentLoaded", function () {
             id: product.id,
             title: product.title,
             price: price.textContent,
-            size: selectedSize
+            size: selectedSize,
+            image: product.image,
         };
   
         addToCart(productDetails);

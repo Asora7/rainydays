@@ -1,23 +1,41 @@
 // Product list
 
-document.addEventListener("DOMContentLoaded", function() {
-    const productsContainer = document.getElementById('products-men');
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+document.addEventListener("DOMContentLoaded", async function() {
+    try {
+        const productsContainer = document.getElementById('products-men');
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-    fetch('https://api.noroff.dev/api/v1/rainy-days')
-        .then(response => response.json())
-        .then(products => {
-            console.log("Products:", products);
+        showLoadingIndicator();
 
-            products.forEach(product => {
-                const productItem = createProductItem(product);
-                productsContainer.appendChild(productItem);
-            });
-        })
-        .catch(error => console.error('Error fetching products:', error));
+        const response = await fetch('https://api.noroff.dev/api/v1/rainy-days');
+        
+        if (!response.ok) {
+            throw new Error(`Error: ${response.status} - ${response.statusText}`);
+        }
+
+        const products = await response.json();
+
+        products.forEach(product => {
+            const productItem = createProductItem(product);
+            productsContainer.appendChild(productItem);
+        });
+    } catch (error) {
+
+        if (!window.location.href.includes('error.html')) {
+            window.location.href = '/error.html';
+        }
+    } finally {
+        hideLoadingIndicator();
+    }
 });
 
+function showLoadingIndicator() {
+    document.getElementById("loading-spinner").style.display = "block";
+}
 
+function hideLoadingIndicator() {
+    document.getElementById("loading-spinner").style.display = "none";
+}
 
 function createProductItem(product) {
     const productItem = document.createElement('div');
@@ -25,7 +43,6 @@ function createProductItem(product) {
 
 
     const productLink = document.createElement('a');
-    console.log('Product ID:', product.id);
     productLink.href = `/products/product-detail.html#${product.id}`;
 
     const img = new Image();
@@ -58,13 +75,6 @@ function createProductItem(product) {
 
     return productItem;
 }
-
-
-
-
-
-
-/// button to choose genre
 
 function filterProducts(category) {
     const categoryButtons = document.querySelectorAll(".category-button");

@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Rainydays website" content="Contact us in Raidays for quality jackets">
+    <meta name="Rainydays website" content="Contact us in Rainydays for quality jackets">
     <title>Rainydays Contact</title>
     <link href="css/contact.css" rel="stylesheet"/>
     <link href="/css/shared.css" rel="stylesheet"/>
     <link rel="icon" type="image/png" href="Images/favicon.png">
     <script src="https://kit.fontawesome.com/5e7a9d58a5.js" crossorigin="anonymous"></script>
     <script src="/javascript/contact.js" defer></script>
+    <script src="/javascript/shared-functions.js" defer></script>
 </head>
 <body>
     <header>
@@ -25,7 +26,7 @@
                         <input type="search" name="search" id="search" placeholder="Search...">
                     </div>
                     </search>
-                <li><a href="checkout/checkout.html" class="display-desktop">Checkout</a> <i class="fa-solid fa-cart-shopping"></i></li>
+                    <li><a href="/checkout/checkout.html" class="display-desktop">Checkout<i class="fa-solid fa-cart-shopping"></i><span id="cart-count">0</span></li></a>
             </ul>
         </nav>
         <div class="button">
@@ -37,7 +38,7 @@
             </div>
         </div>
         <a href="checkout/checkout.html">
-            <button class="checkout-icon"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></button>
+            <button class="checkout-icon"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i><span id="cart-count">0</span></button>
         </a>
         <div class="menu-toggle">
             <input type="checkbox" id="menu-checkbox">
@@ -100,7 +101,7 @@
             <h3>Receive news letters</h3>
             <p class="sign">sign up for monthly updates and offers</p>
             <form>
-                <input type="email" name="E-mail" id="email" class="email" placeholder="E-mail">
+                <input type="email" name="E-mail" id="email-sign-up" class="email" placeholder="E-mail">
                 <button class="sign-up">Sign up</button>
             </form>
             <p class="follow">Follow us    <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-tiktok"></i> <i class="fa-brands fa-twitter"></i></p>
@@ -113,7 +114,7 @@
             <ul>
                 <li class="about-us"><a href="about.html">About Us</a></li>
                 <li class="contact-us"><a href="contact.html">Contact Us</a></li>
-                <li class="products"><a href="../Rainydays/shop/shop.html">Products</a></li>
+                <li class="products"><a href="products/product-list.html">Products</a></li>
                 <li class="follow-us">
                     <p>Follow us <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-tiktok"></i> <i class="fa-brands fa-twitter"></i>
                 </li>

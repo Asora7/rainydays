@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Rainydays website" content="View Men's quality outdoors jackets from Raidays">
+    <meta name="Rainydays website" content="View all the jackets from Rainydays">
     <title>Rainydays Shop Men's</title>
     <link href="../css/product-list.css" rel="stylesheet"/>
     <link href="../css/shared.css" rel="stylesheet"/>
@@ -18,7 +18,7 @@
         <nav>
             <ul class="display-desktop">
                 <li><a href="../index.html">Home</a></li>
-                <li class="shop"><a href="shop/shop.html">Shop</a></li>
+                <li><a href="/products/product-list.html">Shop</a></li>
                 <li><a href="../about.html">About Us</a></li>
                 <li><a href="../contact.html">Contact Us</a></li>
                 <li><search>
@@ -26,7 +26,7 @@
                         <input type="search" name="search" id="search" placeholder="Search...">
                     </div>
                     </search>
-                <li><a href="../checkout/checkout.html" class="display-desktop">Checkout</a><i class="fa-solid fa-cart-shopping"></i><span id="cart-count">0</span></li>
+                <li><a href="../checkout/checkout.html" class="display-desktop">Checkout<i class="fa-solid fa-cart-shopping"></i><span id="cart-count">0</span></li></a>
             </ul>
         </nav>
         <div class="button">
@@ -49,7 +49,7 @@
             </label>
             <ul class="menu">
                 <li class="home"><a href="../index.html">Home</a></li>
-                <li><a href="shop/shop.html">Shop</a></li>
+                <li><a href="/products/product-list.html">Shop</a></li>
                 <li><a href="../about.html">About us</a></li>
                 <li><a href="../contact.html">Contact us</a></li>
                 <li><a href="../checkout/checkout.html">Checkout</a></li>
@@ -69,7 +69,9 @@
             <button class="category-button" onclick="filterProducts('female')">Female</button>
             <button class="category-button" onclick="filterProducts('sale')">Sale</button>
         </div>
-        
+        <div id="loading-spinner" style="display: none;">
+            Loading...
+          </div>
         <div id="products-men" class="products-men"></div>
     </main>
     <footer>
@@ -78,7 +80,7 @@
             <ul>
                 <li class="about-us"><a href="about.html">About Us</a></li>
                 <li class="contact-us"><a href="contact.html">Contact Us</a></li>
-                <li class="products"><a href="../Rainydays/shop/shop.html">Products</a></li>
+                <li class="products"><a href="product-list.html">Products</a></li>
                 <li class="follow-us">
                     <p>Follow us <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-tiktok"></i> <i class="fa-brands fa-twitter"></i>
                 </li>

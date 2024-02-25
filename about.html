@@ -6,8 +6,10 @@
     <meta name="Rainydays website" content="Read about Rainydays story, quality and vision">
     <title>Rainydays About</title>
     <link href="css/about.css" rel="stylesheet"/>
+    <link href="css/shared.css" rel="stylesheet"/>
     <link rel="icon" type="image/png" href="Images/favicon.png">
     <script src="https://kit.fontawesome.com/5e7a9d58a5.js" crossorigin="anonymous"></script>
+    <script src="javascript/shared-functions.js" defer></script>
 </head>
 <body>
     <header>
@@ -23,10 +25,7 @@
                         <input type="search" name="search" id="search" placeholder="Search...">
                     </div>
                     </search>
-                <li><a href="checkout/checkout.html" class="display-desktop">Checkout</a>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span id="cart-count">0</span>
-                </li>
+                    <li><a href="/checkout/checkout.html" class="display-desktop">Checkout<i class="fa-solid fa-cart-shopping"></i><span id="cart-count">0</span></li></a>
             </ul>
         </nav>
         <div class="button">
@@ -97,7 +96,7 @@
             <ul>
                 <li class="about-us"><a href="about.html">About Us</a></li>
                 <li class="contact-us"><a href="contact.html">Contact Us</a></li>
-                <li class="products"><a href="../Rainydays/shop/shop.html">Products</a></li>
+                <li class="products"><a href="products/product-list.html">Products</a></li>
                 <li class="follow-us">
                     <p>Follow us <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-tiktok"></i> <i class="fa-brands fa-twitter"></i>
                 </li>
@@ -115,6 +114,5 @@
             Copyright &copy;
         </div>
     </footer>
-    <script src="javascript/shared-functions.js"></script>
 </body>
 </html>
