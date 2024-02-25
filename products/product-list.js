@@ -43,7 +43,7 @@ function createProductItem(product) {
 
 
     const productLink = document.createElement('a');
-    productLink.href = `product-detail.html#${product.id}`;
+    productLink.href = `/products/product-detail.html#${product.id}`;
 
     const img = new Image();
     img.src = product.image;
@@ -75,6 +75,7 @@ function createProductItem(product) {
 
     return productItem;
 }
+
 
 function filterProducts(category) {
     const categoryButtons = document.querySelectorAll(".category-button");
