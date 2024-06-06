@@ -2,6 +2,7 @@
 
 ![Skjermbilde 2024-06-06 kl  12 45 26](https://github.com/Asora7/rainydays/raw/main/assets/142609146/106f48bc-f9d1-43a0-818a-1e23bab7a22e.png)
 
+
 Welcome to Rainydays, an online store project for ordering high-quality outdoor jackets designed to keep you dry and warm in extreme weather conditions.
 
 
