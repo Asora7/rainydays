@@ -1,7 +1,6 @@
 # Rainydays
 
-![Skjermbilde 2024-06-06 kl 12 45 26](https://github.com/Asora7/rainydays/raw/main/assets/142609146/cc57d917-c0e6-458a-b628-3f29d01a7f8d.png)
-
+![Rainydays Logo](https://raw.githubusercontent.com/Asora7/rainydays/main/Images/favicon.png)
 
 
 Welcome to Rainydays, an online store project for ordering high-quality outdoor jackets designed to keep you dry and warm in extreme weather conditions.
