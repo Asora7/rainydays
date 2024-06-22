@@ -24,6 +24,7 @@ Key features include:
 - HTML
 - CSS
 - Javascript
+- VS code
 
 
 ## Getting Started
