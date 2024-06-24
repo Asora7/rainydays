@@ -29,6 +29,8 @@ Key features include:
 
 ## Getting Started
 
+Ensure git is installed.
+
 ### Installing
 
 
@@ -78,6 +80,7 @@ To open the project in Visual Studio Code (VS Code), follow these steps:
 ### Running
 
 Since this project does not require Node.js or npm, you do not need to run any additional commands to view or edit the project files.
+Since this project is HTML-based and doesn't require Node.js or npm, you can simply open index.html in your browser to view or edit the project files.
 
 
 ## Contributing
